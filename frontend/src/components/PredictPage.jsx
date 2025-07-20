@@ -67,7 +67,7 @@ export default function PredictPage() {
     formData.append('image', file);
 
     try {
-      const response = await axios.post('http://localhost:5000/upload', formData, {
+      const response = await axios.post('https://aerialvehicle-detection-backend-1.onrender.com/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
